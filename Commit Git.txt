@@ -1,5 +1,5 @@
 git init
 git commit -m "<nome do commit>"
 git remote add origin <url do repositorio>
+git add . (todos os arquivos, já dentro da pasta)
 git push -u origin master
-                
