@@ -1,0 +1,2 @@
+- contexto lexo: em qual contexto foi escrito determinada função
+- função bind: recebe como parametro o Objeto que referencia o this
