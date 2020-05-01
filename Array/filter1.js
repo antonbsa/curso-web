@@ -5,6 +5,10 @@ const produtos = [
     { nome: 'Copo de Plastico', preco: 18.99, fragil: false },
 ]
 
-console.log(produtos.filter(function(p){
+/* console.log(produtos.filter(function(p){
   return (p.preco>500 && p.fragil)
+})) */
+
+console.log(produtos.filter(function(p){
+  return (Math.min(p.preco))
 }))
