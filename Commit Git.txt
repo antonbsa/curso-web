@@ -1,5 +1,6 @@
-git init
-git add . (todos os arquivos, já dentro da pasta)
+git init                                (dentro da pasta)
+git status                              (conferir os arquivos novos e modificados)  
+git add .                               (todos os arquivos, já dentro da pasta)
+git status                              (conferir se todos foram adicionados)
 git commit -m "<nome do commit>"
-git remote add origin <url do repositorio>
 git push -u origin master
