@@ -9,3 +9,11 @@ const produto = {
 fs.writeFile(__dirname + '/arquivoGerado.json', JSON.stringify(produto), err => {
     console.log(err || 'Arquivo salvo!')
 })
+
+
+let pessoa = {
+    nome: "anton",
+    sobrenome: "Barboza",
+    idade: 22,
+    peso: 68
+}
