@@ -24,7 +24,6 @@ function setTime(e) {
     
     for(i in efetuadas){
         array = e[i].toString().split(":")
-        // console.log(Number(array[0]) === 29)
         if(array.length == 2){
             time[1] += Number(array[0])
             time[2] += Number(array[1])
