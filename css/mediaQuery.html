@@ -12,6 +12,18 @@
             border: solid 5px;
             display: none;
         }
+
+        @media (max-width: 600px) {                             /* (Critério) */
+            .muito-pequeno { display: block; }
+        }
+
+        @media (max-width: 1000px), (orientation: portrait) {   /* , == OU */
+            .pequeno-retrato { display: block }
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px) {     /* and == E */
+            .intervalo { display: block; }
+        }
     </style>
 </head>
 <body>
