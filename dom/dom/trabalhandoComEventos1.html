@@ -2,16 +2,27 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
-    <title>Trabalhando com Eventos #01</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+  <meta charset='UTF-8'>
+  <title>Trabalhando com Eventos #01</title>
+  <link rel='stylesheet' href='css/estilo.css'>
 </head>
 
 <body class="conteudo exercicio">
-    <div>
-        <a href="https://google.com.br">Google</a>
-    </div>
-    <script>
-        // ...
-    </script>
+  <div>
+    <!-- <a href="https://google.com.br" onclick="navegarEm2s(event)">Google</a> -->
+    <a href="https://google.com.br">Google</a>
+  </div>
+  <script>
+    function navegarEm2s(e) {
+      e.preventDefault();
+      console.log('saindo em 2seg ....');
+      setTimeout(() => {
+        const link = e.target;
+        window.location.href = link.href;
+      }, 2000);
+    }
+
+    const a = document.querySelector('a');
+    a.onclick = navegarEm2s;
+  </script>
 </body>

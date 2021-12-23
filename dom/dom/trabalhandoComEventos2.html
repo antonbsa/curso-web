@@ -2,14 +2,24 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
-    <title>Trabalhando com Eventos #02</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+  <meta charset='UTF-8'>
+  <title>Trabalhando com Eventos #02</title>
+  <link rel='stylesheet' href='css/estilo.css'>
 </head>
 
 <body class="conteudo exercicio">
-    <div>Elemento</div>
-    <script>
-        // ...
-    </script>
+  <div>Elemento</div>
+  <script>
+    const item = document.querySelector('div');
+    item.style.position = 'absolute';
+
+    item.onmousemove = e => {
+      const insideItem = e.target;
+      insideItem.style.cursor = 'move';
+      if (e.buttons) {
+        insideItem.style.top = `${e.clientY - (insideItem.clientHeight / 2)}px`;
+        insideItem.style.left = `${e.clientX - (insideItem.clientWidth / 2)}px`;
+      }
+    }
+  </script>
 </body>
