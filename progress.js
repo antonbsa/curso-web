@@ -15,6 +15,7 @@ const sectionProgress = [
   '04:44',  // html
   '07:13',  // css
   '03:30',  // integration
+  '01:51',  // ajax
 ];
 
 function getTime() {

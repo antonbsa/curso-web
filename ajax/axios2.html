@@ -2,18 +2,32 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
-    <title>Axios #02</title>
-    <link rel='stylesheet' href='css/estilo.css'>
-    <script src="js/axios.js"></script>
+  <meta charset='UTF-8'>
+  <title>Axios #02</title>
+  <link rel='stylesheet' href='css/estilo.css'>
+  <script src="js/axios.js"></script>
 </head>
 
 <body class="conteudo exercicio">
-    <h1>Axios Get/Post</h1>
-    <div id="get"></div>
-    <div id="post"></div>
+  <h1>Axios Get/Post</h1>
+  <div id="get"></div>
+  <div id="post"></div>
 
-    <script>
-        // ...
-    </script>
+  <script>
+    function showResult(id, data) {
+      const text = JSON.stringify(data);
+      document.getElementById(id).innerHTML = text;
+    }
+
+    axios.get('/par-ou-impar', {
+      params: {
+        number: 4
+      }
+    }).then(resp => showResult('get', resp.data));
+
+    axios.post('formulario', {
+      nome: 'João',
+      sobrenome: 'Silva'
+    }).then(resp => showResult('post', resp.data))
+  </script>
 </body>
