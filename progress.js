@@ -19,6 +19,7 @@ const sectionProgress = [
   '02:35',  // gulp
   '01:02',  // webpack
   '03:16',  // jquery
+  '02:24',  // bootstrap
 ];
 
 function getTime() {
