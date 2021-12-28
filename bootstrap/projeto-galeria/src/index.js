@@ -7,3 +7,4 @@ import './scss/index.scss';
 
 // files
 import './js/core/includes';
+import './js/plugins/cityButtons';

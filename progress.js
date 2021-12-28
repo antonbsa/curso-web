@@ -20,6 +20,7 @@ const sectionProgress = [
   '01:02',  // webpack
   '03:16',  // jquery
   '02:24',  // bootstrap
+  '01:08',  // gallery project
 ];
 
 function getTime() {
