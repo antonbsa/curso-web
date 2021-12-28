@@ -21,6 +21,8 @@ const sectionProgress = [
   '03:16',  // jquery
   '02:24',  // bootstrap
   '01:08',  // gallery project
+  '01:28',  // react
+  '01:13',  // calculator project
 ];
 
 function getTime() {
