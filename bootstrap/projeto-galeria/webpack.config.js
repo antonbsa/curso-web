@@ -1,4 +1,4 @@
-const modoDev = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production'
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
@@ -6,7 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-    mode: modoDev ? 'development' : 'production',
+    mode: devMode ? 'development' : 'production',
     entry: './src/index.js',
     devServer: {
         contentBase: './build',
@@ -27,7 +27,7 @@ module.exports = {
         path: __dirname + '/build'
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'estilo.css' }),
+        new MiniCssExtractPlugin({ filename: 'style.css' }),
         new CopyWebpackPlugin([
             { context: 'src/', from: '**/*.html' },
             { context: 'src/', from: 'imgs/**/*' }
