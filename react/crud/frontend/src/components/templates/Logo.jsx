@@ -1,9 +1,13 @@
 import '../styles/Logo.css';
 
-function Logo(props) {
+import logo from '../../assets/imgs/logo.png';
+
+function Logo() {
   return (
     <aside className='logo'>
-      Logo
+      <a href="/" className="logo">
+        <img src={logo} alt="Logo" />
+      </a>
     </aside>
   );
 }

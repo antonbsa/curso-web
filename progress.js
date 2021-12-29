@@ -23,6 +23,7 @@ const sectionProgress = [
   '01:08',  // gallery project
   '01:28',  // react
   '01:13',  // calculator project
+  '01:48',  // crud project
 ];
 
 function getTime() {
