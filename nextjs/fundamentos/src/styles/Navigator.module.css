@@ -1,0 +1,13 @@
+.navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.navigator:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
