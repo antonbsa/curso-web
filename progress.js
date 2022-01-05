@@ -24,6 +24,7 @@ const sectionProgress = [
   '01:28',  // react
   '01:13',  // calculator project
   '01:48',  // crud project
+  '05:10',  // registration project: nextjs + firebase
 ];
 
 function getTime() {
