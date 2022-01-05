@@ -15,6 +15,8 @@ export default function Home() {
       <Navigator text="Navigation #01" to="/navigation" color="green"/>
       <Navigator text="Navigation #02" to="/client/rs/123" color="blue"/>
       <Navigator text="Component with state #02" to="/state"/>
+      <Navigator text="API Integration" to="/integration" color="#66ff2e"/>
+      <Navigator text="Static content" to="/static" color="#4a3b5c"/>
     </div>
   )
 }
