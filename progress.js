@@ -27,6 +27,7 @@ const sectionProgress = [
   '05:10',  // registration project: nextjs + firebase
   '01:17',  // vue fundamentals
   '00:38',  // simple vue projects
+  '00:49',  // vue calculator project
 ];
 
 function getTime() {
