@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Binding</title>
-    <link rel="stylesheet" href="/css/estilo.css">
-    <script src="/js/vue.min.js"></script>
-</head>
-<body class="exercicio">
 
-    <script>
-        // ...
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <title>Binding</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+  <script src="/js/vue.min.js"></script>
+</head>
+
+<body class="exercicio">
+  <div id="app">
+    <p>{{ link }}</p>
+    <p><a href="{{link}}">Canal?</a></p>
+    <p><a v-bind:href="link">agora vai</a></p>
+    <p><a :href="link">agora vai 2</a></p>
+    <p>
+      <input type="text" v-model="name"><br>
+      <span>{{ name }}</span>
+    </p>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        link: 'https://youtube.com/cod3rcursos',
+        name: 'Maria',
+      },
+      watch: {
+        name(newValue) {
+          console.log(newValue.toUpperCase())
+        }
+      }
+    })
+  </script>
 </body>
+
 </html>
