@@ -28,6 +28,7 @@ const sectionProgress = [
   '01:17',  // vue fundamentals
   '00:38',  // simple vue projects
   '00:49',  // vue calculator project
+  '01:04',  // vue montyHall
 ];
 
 function getTime() {
