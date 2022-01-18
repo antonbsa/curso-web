@@ -30,6 +30,7 @@ const sectionProgress = [
   '00:49',  // vue calculator project
   '01:04',  // vue montyHall
   '01:29',  // vue+electron most-used-words (skipped)
+  '06:32',  // angular crud
 ];
 
 function getTime() {
